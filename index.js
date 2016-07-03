@@ -45,9 +45,9 @@ app.post('/webhook/', function (req, res) {
 
 });
 
-app.listen(1337, function () {
+app.listen(process.env.PORT || 5000, function () {
 
-    console.log('Facebook Messenger echoing bot started on port 1337!');
+    console.log('Facebook Messenger echoing bot started on port X!');
 
 });
 
