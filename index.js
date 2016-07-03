@@ -11,10 +11,8 @@ app.use(bodyParser.json());
 
 app.get('/', function (req, res) {
 
-    if (req.query['hub.verify_token'] === verify_token) {
-        res.send(req.query['hub.challenge']);
-    }
-    //res.send('Hello World! This is the bot\'s root endpoint!');
+  
+    res.send('Hello World! This is the bot\'s root endpoint!');
 
 });
 
